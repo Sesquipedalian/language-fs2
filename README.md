@@ -2,7 +2,7 @@
 
 Syntax highlighting for FreeSpace 2 mission and table files.
 
-Ported from my FreeSpace 2 bundle for TextMate.
+Ported from my [FreeSpace 2 bundle](https://github.com/Sesquipedalian/freespace2.tmbundle) for [TextMate](https://github.com/textmate/textmate).
 
 Supported file types:
 - .fs2
