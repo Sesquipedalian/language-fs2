@@ -9,3 +9,7 @@ Supported file types:
 - .fc2
 - .tbl
 - .tbm
+
+##Installation
+
+Search for `languages-fs2` in Atom's built-in package manager, and click the button to install.
