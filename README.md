@@ -10,6 +10,6 @@ Supported file types:
 - .tbl
 - .tbm
 
-##Installation
+## Installation
 
 Search for `languages-fs2` in Atom's built-in package manager, and click the button to install.
