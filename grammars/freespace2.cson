@@ -53,7 +53,7 @@ patterns: [
     name: "variable.parameter.fs2"
   }
   {
-    begin: "(?<=^\\$Formula:|^\\$Arrival Cue:|^\\$Departure Cue:|^\\$AI Goals:)\\s"
+    begin: "(?<=\\$Formula:|\\$Arrival Cue:|\\$Departure Cue:|\\$AI Goals:)\\s"
     end: "^(?=\\$|\\+|\\@|#)"
     patterns: [
       {
