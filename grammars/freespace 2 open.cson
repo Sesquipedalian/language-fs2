@@ -15,12 +15,12 @@ patterns: [
     name: "comment.line"
   }
   {
-    begin: "(XSTR)\\((?=\")"
+    begin: "(XSTR)\\("
     beginCaptures:
       "1":
         name: "support.class"
     contentName: "string.quoted.double"
-    end: "(?<=\"),\\s+(-?\\d+)\\)"
+    end: ",\\s+(-?\\d+)\\)"
     endCaptures:
       "1":
         name: "support.constant"
