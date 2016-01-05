@@ -1,6 +1,8 @@
 ## 0.2.0
-* Restructured SEXP handling to be much more robust
-* Normalized some internal file names
+* Restructures SEXP handling to be much more robust
+* Better differentiates some language elements
+* Normalizes some internal file names
+* Adds license file
 
 ## 0.1.0
 * Initial port to Atom

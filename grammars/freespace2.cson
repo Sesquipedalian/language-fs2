@@ -7,31 +7,33 @@ fileTypes: [
 name: "FreeSpace 2"
 patterns: [
   {
-    match: "^\\s*#[^$]+$"
-    name: "entity.name.function"
+    captures:
+      "1":
+        name: "entity.name.function.fs2"
+    match: "^\\s*(#[^$;]+)"
   }
   {
     match: ";[^$]+$"
-    name: "comment.line"
+    name: "comment.line.fs2"
   }
   {
     begin: "(XSTR)\\("
     beginCaptures:
       "1":
-        name: "support.class"
-    contentName: "string.quoted.double"
+        name: "support.class.fs2"
+    contentName: "string.quoted.double.fs2"
     end: ",\\s+(-?\\d+)\\)"
     endCaptures:
       "1":
-        name: "support.constant"
+        name: "support.constant.fs2"
     patterns: [
       {
         match: "\\$[PpVvEeKkYyWwGgBbRrHhNnFf]"
-        name: "constant.other.escape"
+        name: "constant.language.fs2"
       }
       {
         match: "\\$(quote|semicolon|slash|\\|)"
-        name: "constant.other.escape"
+        name: "constant.character.escape.fs2"
       }
     ]
   }
@@ -39,22 +41,19 @@ patterns: [
     include: "#quoted"
   }
   {
-    captures:
-      "1":
-        name: "entity.name.tag"
-    match: "(\\$[A-Za-z0-9_ ]+)(:|$)"
+    match: "\\$[A-Za-z0-9_ ]+(?=:|$)"
+    name: "entity.name.tag.fs2"
   }
   {
-    captures:
-      "1":
-        name: "entity.other.attribute-name"
-      "2":
-        name: "entity.other.attribute-name"
-    match: "(\\+|@)([A-Za-z0-9_ ]+)(:|$)"
+    match: "\\+[A-Za-z0-9_ ]+(?=:|$)"
+    name: "keyword.other.fs2"
+  }
+  {
+    match: "@[A-Za-z0-9_ ]+(?=:|$)"
+    name: "variable.parameter.fs2"
   }
   {
     begin: "(?<=^\\$Formula:|^\\$Arrival Cue:|^\\$Departure Cue:|^\\$AI Goals:)\\s"
-    comment: "Uses lookbehind to avoid conflicts with entity.name.tag rule. End matches a line starting a new token."
     end: "^(?=\\$|\\+|\\@|#)"
     patterns: [
       {
@@ -69,14 +68,14 @@ repository:
       {
         begin: "\""
         end: "\""
-        name: "string.quoted.double"
+        name: "string.quoted.double.fs2"
       }
     ]
   sexp_variables:
     patterns: [
       {
         match: "(?<=\\s)@[^\\[]+\\[\\d+\\](?=\\s)"
-        name: "variable.other"
+        name: "variable.other.fs2"
       }
     ]
   sexps:
@@ -644,7 +643,7 @@ repository:
           						)
           						(?=\\s|$)
         '''
-        name: "keyword.operator"
+        name: "keyword.operator.fs2"
       }
     ]
 scopeName: "text.freespace2"
