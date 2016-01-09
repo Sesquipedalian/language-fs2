@@ -1,3 +1,6 @@
+## 0.2.2
+* Refinements and improvements
+
 ## 0.2.1
 * Fixes a bug in SEXP detection
 
