@@ -46,11 +46,11 @@ patterns: [
   }
   {
     match: "\\+[A-Za-z0-9_ ]+(?=:|$)"
-    name: "keyword.other.fs2"
+    name: "keyword.other.unit.fs2"
   }
   {
     match: "@[A-Za-z0-9_ ]+(?=:|$)"
-    name: "variable.parameter.fs2"
+    name: "storage.type.fs2"
   }
   {
     begin: "(?<=\\$Formula:|\\$Arrival Cue:|\\$Departure Cue:|\\$AI Goals:)\\s"
@@ -643,7 +643,7 @@ repository:
           						)
           						(?=\\s|$)
         '''
-        name: "keyword.operator.fs2"
+        name: "keyword.other.special-method.fs2"
       }
     ]
 scopeName: "text.freespace2"
