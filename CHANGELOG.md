@@ -1,3 +1,9 @@
+## 0.3.2
+* Allow space between digit and closing parenthesis in XSTR construct
+
+## 0.3.1
+* Derp...
+
 ## 0.3.0
 * Redefines some language elements (again) because Atom's default themes ignored a rather important one
 * Fine tunes a couple of the regular expressions
