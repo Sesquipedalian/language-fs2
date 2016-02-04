@@ -1,5 +1,6 @@
 ## 0.3.0
-* Refinements and improvements
+* Redefines some language elements (again) because Atom's default themes ignored a rather important one
+* Fine tunes a couple of the regular expressions
 
 ## 0.2.1
 * Fixes a bug in SEXP detection
