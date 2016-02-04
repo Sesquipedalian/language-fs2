@@ -1,6 +1,6 @@
 {
   "name": "language-fs2",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Syntax highlighting for FreeSpace 2 mission and table files",
   "keywords": [],
   "repository": "https://github.com/Sesquipedalian/language-fs2",
