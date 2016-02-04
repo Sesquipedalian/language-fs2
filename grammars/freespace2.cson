@@ -22,7 +22,7 @@ patterns: [
       "1":
         name: "support.class.fs2"
     contentName: "string.quoted.double.fs2"
-    end: ",\\s+(-?\\d+)\\)"
+    end: ",\\s*(-?\\d+)\\s*\\)"
     endCaptures:
       "1":
         name: "support.constant.fs2"
