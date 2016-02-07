@@ -94,7 +94,7 @@ repository:
       {
         match: '''
           (?x)
-          						(?<=^|\\s)
+          						(?<=^|\\s|\\(|\\))
           						(	xor
           						|	when-argument
           						|	when
@@ -641,7 +641,7 @@ repository:
           						|	\\*
           						|	!=
           						)
-          						(?=\\s|$)
+          						(?=\\s|$|\\(|\\))
         '''
         name: "keyword.other.special-method.fs2"
       }
